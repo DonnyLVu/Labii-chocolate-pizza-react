@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import chocopizza from './images/choco-pizza.png';
 export default class ImgSection extends Component {
     render() {
         return (
@@ -18,13 +18,10 @@ export default class ImgSection extends Component {
                     </p>
                 </section>
             </div>
-           
-
-
-            <div><img className='pizzaPic' src='../public/assets/choco-pizza.png' alt=""></img></div>
-
-
         
+            <div>
+                <img className='pizzaPic' src={chocopizza} alt=""></img>
+            </div>
             </>
         )
     }

@@ -1,25 +1,17 @@
 import './App.css';
-import Header from './Header';
+//import Header from './Header';
 import ListItems from './ListItems';
 import Recipe from './Recipe';
 import ImgSection from './ImgSection';
+import React from 'react';
 
-function App() {
+export default class App extends React.Component {
+  render() {
   return (
-      <>
-    Hello WOrld
     <div>
-      <ImgSection src/>
-      Img Selection
-    </div>
-    <div>
+      <ImgSection />
       <Recipe/>
-      Recipe above
-    </div>
-    
-
-
-    <div>
+  
       <ListItems caption="1 1/2 cups milk"/>
       <ListItems caption="1/2 cup mascarpone"/>
       <ListItems caption="1/2 tsp pink salt"/>
@@ -34,9 +26,9 @@ function App() {
       <ListItems caption="1 cup honey roasted pecans, roughly chopped"/>
     </div>
 
-    klbjaskbfja
-    </>
-  );
+
+
+  )
+}
 }
 
-export default App;
