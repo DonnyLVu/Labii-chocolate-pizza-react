@@ -1,14 +1,16 @@
 import './App.css';
-//import Header from './Header';
+import Header from './Header';
 import ListItems from './ListItems';
 import Recipe from './Recipe';
 import ImgSection from './ImgSection';
 import React from 'react';
+import Footer from './Footer.js';
 
 export default class App extends React.Component {
   render() {
   return (
     <div>
+      <Header />
       <ImgSection />
       <Recipe/>
   
@@ -24,6 +26,8 @@ export default class App extends React.Component {
       <ListItems caption="1 lemon, juiced"/>
       <ListItems caption="2 tbsp butter"/>
       <ListItems caption="1 cup honey roasted pecans, roughly chopped"/>
+
+      <Footer />
     </div>
 
 
